@@ -1,0 +1,70 @@
+JSON
+JavaScript object notation
+[
+    {
+        "name":"John",
+        "class":"ui"
+    },
+    {
+        "name":"eva",
+        "class":"node",
+        "city":"helsinki"
+    }
+]
+
+package.JSON
+>>> Main file in the application
+    Start
+    test
+    manage packages
+    Description
+
+npm => node package manager
+node_modules
+
+//////////////////////////////////////
+    Step to Create package.JSON
+//////////////////////////////////////
+** NodeJs must  be install
+> using cmd navigate to the folder
+> npm init
+> Answer all question
+>  type "yes"
+
+
+//////////////////////////////////////
+   About packages
+//////////////////////////////////////
+
+> Local
+> Global
+
+> using cmd navigate to the folder
+> npm install zone.js
+
+>Global
+    >build
+    >Start
+    >Monitor
+    >test
+
+Win
+>  Run cmd as admin
+>  npm i -g @aakashdeveloper/create-node-app
+
+Mac/Linux
+> run cmd/terminal
+> sudo npm i -g @aakashdeveloper/create-node-app
+
+
+//////////////////////////////////////
+    Step to Create node app
+//////////////////////////////////////
+> npm i -g @aakashdeveloper/create-node-app
+> using cmd navigate to the folder
+> generate
+> node-app
+> application name "myapp"
+> cd myapp
+> npm start
+> in browser   http://localhost:7600/
