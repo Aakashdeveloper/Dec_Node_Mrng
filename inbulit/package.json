@@ -1,0 +1,14 @@
+{
+  "name": "inbulit",
+  "version": "1.0.0",
+  "description": "this is inbuilt nodde",
+  "main": "app.js",
+  "scripts": {
+    "start":"node app.js"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "nareshit",
+  "license": "ISC"
+}
