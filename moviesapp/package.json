@@ -1,0 +1,21 @@
+{
+  "name": "moviesapp",
+  "version": "1.0.0",
+  "description": "this is app with express",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "Node",
+    "Express"
+  ],
+  "author": "Nareshit",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  }
+}

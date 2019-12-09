@@ -68,3 +68,22 @@ Mac/Linux
 > cd myapp
 > npm start
 > in browser   http://localhost:7600/
+
+
+npm install -g nodemon
+
+//Es5
+function add(a,b){
+    return a+b
+}
+
+var a = 10
+var b = "my age is "+a 
+"my age is 10"
+
+//Es6
+var add = (a,b) => { return a+b}
+
+var a = 10
+var b = `my age is ${a}`
+"my age is 10"
