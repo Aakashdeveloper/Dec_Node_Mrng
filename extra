@@ -87,3 +87,11 @@ var add = (a,b) => { return a+b}
 var a = 10
 var b = `my age is ${a}`
 "my age is 10"
+
+//////Template Engine//////
+npm i ejs
+
+var a = [0,1,2,3]
+for(i=0;i<a.length;i++){
+    console.log(i)
+}
