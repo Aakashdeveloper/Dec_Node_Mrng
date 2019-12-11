@@ -95,3 +95,50 @@ var a = [0,1,2,3]
 for(i=0;i<a.length;i++){
     console.log(i)
 }
+
+SQl         NoSQL
+database    database
+table       collection
+Row          document
+
+Sno  | Hindi  | English
+1    | 80     |
+2    |        |80
+
+[
+    {
+        sno:1,
+        hindi:80
+    },
+    {
+        sno:2,
+        English:80
+}
+]
+
+after installing mongodb
+
+>make data folder in c drive
+> insidee data make db 
+
+> go inside monodb folder through cmd and type mongod 
+> go inside monodb folder through cmd and type mongo
+
+Mac
+sudo mongod --dbpath /System/Volumes/Data/data/db
+
+CRUD
+
+show dbs 
+use classdatabase
+db.products.find()
+db.products.find().pretty()
+db.products.find({productId:8}).pretty()
+db.products.count()
+db.decnode.insert({"name":"john","class":"node"})
+db.decnode.insert({_id:1,"name":"eva","class":"node"})
+db.products.find({productId:10},{productId:1}).pretty()
+db.products.find({productId:10},{productId:1,productName:1,_id:0}).pretty()
+db.products.find({productId:10},{_id:0}).pretty()
+
+db.products.find({},{_id:0}).sort({productName:-1}).pretty()
