@@ -31,16 +31,22 @@ var artist = [
             "genre":"Rock"
         }
 ]
-     
-artistRouter.route('/')
-.get((req,res)=>{
-    //res.send(artist)
-    res.render('artists',{title:'Artists Page'})
-});
+   
 
-artistRouter.route('/details/:id')
-.get((req,res)=>{
-    res.send('artist details Page')
-});
+function routes(menu){
+    artistRouter.route('/')
+    .get((req,res)=>{
+        //res.send(artist)
+        res.render('artists',{title:'Artists Page',menu})
+    });
+    
+    artistRouter.route('/details/:id')
+    .get((req,res)=>{
+        res.send('artist details Page')
+    });
 
-module.exports=artistRouter;
+    return artistRouter
+}
+
+
+module.exports=routes;

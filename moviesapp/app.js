@@ -3,8 +3,16 @@ var app = express();
 var port = 9800;
 var morgan = require('morgan');
 var chalk = require('chalk');
-var moviesRouter = require('./src/routes/moviesRoute');
-var artistRouter = require('./src/routes/artistRoute');
+var menu = [
+    {name:'Home',Link:'/'},
+    {name:'Movies',Link:'/movies'},
+    {name:'Artists',Link:'/artist'}
+  ]
+
+var moviesRouter = require('./src/routes/moviesRoute')(menu);
+var artistRouter = require('./src/routes/artistRoute')(menu);
+
+
 
 app.use(morgan('tiny'));
 
@@ -16,7 +24,7 @@ app.set('views','./src/views')
 app.set('view engine','ejs');
 
 app.get('/', (req,res) => {
-    res.send("This is default route")
+    res.render('home',{title:'Home Page',menu})
 });
 
 app.use('/movies', moviesRouter);
