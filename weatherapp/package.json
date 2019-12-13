@@ -1,0 +1,20 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "this is weatherApp",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "Node",
+    "weather"
+  ],
+  "author": "NareshIt",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  }
+}

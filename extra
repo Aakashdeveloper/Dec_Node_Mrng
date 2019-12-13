@@ -142,3 +142,26 @@ db.products.find({productId:10},{productId:1,productName:1,_id:0}).pretty()
 db.products.find({productId:10},{_id:0}).pretty()
 
 db.products.find({},{_id:0}).sort({productName:-1}).pretty()
+
+
+User(Want Ticket Status)
+        ^
+NodeJs(MyApi Layer)
+        ^
+ServiceNow(Api)(Ticket Status)
+
+
+///////////GitHub//////////////
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/learnGit1.git
+git push -u origin master
+
+///NextTime///
+git add .
+git commit -m "first commit"
+git push
+
+git checkout -b newfeature
+
