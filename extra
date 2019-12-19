@@ -167,4 +167,16 @@ git checkout -b newfeature
 
 npm i axios express redis
 
+oo_nodejs
+JWT
+emailapp
+GraphQL
+postgress with NodeJs
+
+testing
+Deployment
+>Nginx
+>Docker
+
+
 

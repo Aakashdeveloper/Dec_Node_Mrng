@@ -1,6 +1,8 @@
-var express = require('express');
-var axios = require('axios');
-var redis = require('redis');
+import express from 'express';
+import axios from 'axios';
+import redis from 'redis';
+
+
 var port = 7700;
 var app = express();
 var client = redis.createClient();
