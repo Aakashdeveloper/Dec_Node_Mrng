@@ -168,16 +168,16 @@ git checkout -b newfeature
 npm i axios express redis
 
 
+//////////
 JWT
 GraphQL
 postgress with NodeJs
+ChatApp
 
-testing
 Deployment
 >Nginx
 >Docker
 
 npm i chai chai-http mocha --save-dev
 
-
-
+npm i express mongoose body-parser cors bcryptjs jsonweebtoken
