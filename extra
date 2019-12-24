@@ -181,3 +181,8 @@ Deployment
 npm i chai chai-http mocha --save-dev
 
 npm i express mongoose body-parser cors bcryptjs jsonweebtoken
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlMDE4MDNiZDhkODU0OTVlODE0ZTU1YyIsImlhdCI6MTU3NzE1Njc4NiwiZXhwIjoxNTc3MjQzMTg2fQ.d8_ftIyYYODV0-fjFVPw3iaA5nXAyS7fHsUz1zJ5Ps0
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlMDE4MTVmNWY4MjczOTY1ZTQ2YzY0MyIsImlhdCI6MTU3NzE1Njk2NiwiZXhwIjoxNTc3MjQzMzY2fQ.nWW6-ygsjWxhlRiL24PtO6Y_bJ-BaV3tUWID5c-fnYU
