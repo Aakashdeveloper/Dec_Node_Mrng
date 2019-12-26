@@ -21,22 +21,27 @@ router.post('/register', (req,res) => {
         role:req.body.role
    },(err,user) => {
        if(err) return res.status(500).send('There was a problem registering user')
-       res.send('Registration Successfull')
+       const string = encodeURIComponent('SucessFull Reegiter Please login now')
+       //res.send('Registration Successfull')
+       res.redirect('/signin?msg='+string)
    })
 });
 
 router.post('/login', (req,res) => {
     User.findOne({email:req.body.email},(err,user) => {
-        if(err) return res.status(500).send('Error on server');
-        if(!user) {res.send('Register first')}
+        if(err)  res.redirect('/signin')
+        if(!user) res.redirect('/signiup')
         else{
             const passwordIsValid = bcrypt.compareSync(req.body.password, user.password);
-            if(!passwordIsValid) return res.status(401).send({auth:false,token:null})
+            const string = encodeURIComponent('Please enter correct password')
+            if(!passwordIsValid) res.redirect('/signin?msg='+string)
             var token = jwt.sign({id:user._id},config.secert,{
                 expiresIn:86400 //24 hours
             });
-            console.log('Login success')
-            res.send({auth:true,token:token})
+            console.log('Login success');
+            localStorage.setItem('authtoken', token)
+            // res.send({auth:true,token:token})
+            res.redirect('/user/profile');
         }
     })
 });
