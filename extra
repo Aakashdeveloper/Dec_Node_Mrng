@@ -186,3 +186,28 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlMDE4MDNiZDhkODU0OTVlODE0ZTU1YyI
 
 
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlMDE4MTVmNWY4MjczOTY1ZTQ2YzY0MyIsImlhdCI6MTU3NzE1Njk2NiwiZXhwIjoxNTc3MjQzMzY2fQ.nWW6-ygsjWxhlRiL24PtO6Y_bJ-BaV3tUWID5c-fnYU
+
+docker run --rm   --name pg-docker -e POSTGRES_PASSWORD=docker -d -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data  postgres
+
+https://hackernoon.com/dont-install-postgres-docker-pull-postgres-bee20e200198
+
+CREATE TABLE public.students
+(
+    "Name" text,
+    "Class" text,
+    "RollNo" integer,
+    "City" text
+)
+
+
+npm i -g json-server
+
+json-server --watch db.json --port 7900
+
+{
+  movies(id:1){
+    name,
+    language,
+    rate
+  }
+}
